@@ -172,7 +172,7 @@ window.geometry("600x500") # Размер окна
 window.resizable(width=False, height=False)  # запрет на изменение окна
 
 # Создаём объект PhotoImage из файла
-icon = tk.PhotoImage(file=r"C:\Users\nemo\Desktop\Проекты HTML\Python\Create_Qrcode\img\logo.png")
+icon = tk.PhotoImage(file="img/logo.png")
 
 # Устанавливаем его как иконку окна
 window.iconphoto(False, icon)  # Первый аргумент: False — иконка только для главного окна
@@ -218,14 +218,14 @@ button1.grid(row=0, column=0, padx=5)
 button2 = tk.Button(button_frame, 
                     text='Телефон QR', 
                     font='10', width=15, 
-                    command=partial(add_logo, r'C:\Users\nemo\Desktop\Проекты HTML\Python\Create_Qrcode\img\logo_phone.png')
+                    command=partial(add_logo, 'img/logo_phone.png')
                     )
 button2.grid(row=0, column=1, padx=5)
 
 button3 = tk.Button(button_frame,
                     text='Email QR', 
                     font='10', width=15, 
-                    command=partial(add_logo, r'C:\Users\nemo\Desktop\Проекты HTML\Python\Create_Qrcode\img\logo_mail.png')
+                    command=partial(add_logo, 'img/logo_mail.png')
                     )
 button3.grid(row=0, column=2, padx=5)
 
